@@ -1,0 +1,13 @@
+.userslist p {
+padding: 5px;
+cursor: pointer;
+color: blue;
+border: 1px solid grey;
+border-radius: 50px;
+}
+.userslist p:hover {
+background-color: grey;
+color:green;
+opacity: .7;
+border-radius: 0px;
+}

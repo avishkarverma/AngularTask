@@ -1,0 +1,9 @@
+<div class="row center">
+  <P> Enter Git User Name </P>
+  <input type="search" (keyup)="getUsers($event.target.value)" placeholder="Type here to search git user" />
+  </div>
+  <div *ngIf="users" class="row userslist">
+    <h2> Total Users Found is {{users.total_count}}</h2>
+    <p *ngFor="let user of users.items" (onclick)='openPopup()'>{{user.login}}</p>
+  
+  </div>
